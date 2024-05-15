@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF0985B52BF1163100C8A449 /* AuthRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985B42BF1163100C8A449 /* AuthRemoteAPI.swift */; };
+		AF0985B82BF116B100C8A449 /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985B72BF116B100C8A449 /* NewAccount.swift */; };
+		AF0985BB2BF117E700C8A449 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = AF0985BA2BF117E700C8A449 /* PromiseKit */; };
+		AF0985BE2BF1180300C8A449 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AF0985BD2BF1180300C8A449 /* Kingfisher */; };
+		AF0985C02BF1187A00C8A449 /* FakeAuthRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985BF2BF1187A00C8A449 /* FakeAuthRemoteAPI.swift */; };
+		AF0985C22BF3B53200C8A449 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985C12BF3B53200C8A449 /* UserProfile.swift */; };
+		AF0985C42BF3B61100C8A449 /* RemoteUserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985C32BF3B61100C8A449 /* RemoteUserSession.swift */; };
+		AF0985C62BF3B6B400C8A449 /* FakeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985C52BF3B6B400C8A449 /* FakeURL.swift */; };
+		AF0985C82BF3B81E00C8A449 /* KooberKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985C72BF3B81E00C8A449 /* KooberKitError.swift */; };
+		AF0985CC2BF3C67700C8A449 /* UserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985CB2BF3C67700C8A449 /* UserSessionRepository.swift */; };
+		AF0985CE2BF3C79000C8A449 /* KooberUserSessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985CD2BF3C79000C8A449 /* KooberUserSessionRepository.swift */; };
+		AF0985D12BF3C96300C8A449 /* UserSessionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0985D02BF3C96300C8A449 /* UserSessionDataStore.swift */; };
+		AF2A76E12A8133E900997669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A76E02A8133E900997669 /* AppDelegate.swift */; };
+		AF2A76E32A8133E900997669 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A76E22A8133E900997669 /* SceneDelegate.swift */; };
+		AF2A76E52A8133E900997669 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2A76E42A8133E900997669 /* MainViewController.swift */; };
+		AF2A76E82A8133E900997669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2A76E62A8133E900997669 /* Main.storyboard */; };
+		AF2A76EA2A8133EA00997669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2A76E92A8133EA00997669 /* Assets.xcassets */; };
+		AF2A76ED2A8133EA00997669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2A76EB2A8133EA00997669 /* LaunchScreen.storyboard */; };
+		AFF732FA2A813BE000ED72A6 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF732F92A813BE000ED72A6 /* NiblessViewController.swift */; };
+		AFF732FC2A813C4D00ED72A6 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF732FB2A813C4D00ED72A6 /* LaunchViewController.swift */; };
+		AFF732FF2A813C8100ED72A6 /* KooberAppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF732FE2A813C8100ED72A6 /* KooberAppDependencyContainer.swift */; };
+		AFF733022A813D3200ED72A6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF733012A813D3200ED72A6 /* MainViewModel.swift */; };
+		AFF733052A81418E00ED72A6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF733042A81418E00ED72A6 /* MainView.swift */; };
+		AFF733082A8141EC00ED72A6 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF733072A8141EC00ED72A6 /* UserSession.swift */; };
+		AFF7330A2A8142C800ED72A6 /* SignedInResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF733092A8142C800ED72A6 /* SignedInResponder.swift */; };
+		AFF7330C2A8142F400ED72A6 /* NotSignedInResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF7330B2A8142F400ED72A6 /* NotSignedInResponder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF0985B42BF1163100C8A449 /* AuthRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteAPI.swift; sourceTree = "<group>"; };
+		AF0985B72BF116B100C8A449 /* NewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
+		AF0985BF2BF1187A00C8A449 /* FakeAuthRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAuthRemoteAPI.swift; sourceTree = "<group>"; };
+		AF0985C12BF3B53200C8A449 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AF0985C32BF3B61100C8A449 /* RemoteUserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserSession.swift; sourceTree = "<group>"; };
+		AF0985C52BF3B6B400C8A449 /* FakeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURL.swift; sourceTree = "<group>"; };
+		AF0985C72BF3B81E00C8A449 /* KooberKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberKitError.swift; sourceTree = "<group>"; };
+		AF0985CB2BF3C67700C8A449 /* UserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionRepository.swift; sourceTree = "<group>"; };
+		AF0985CD2BF3C79000C8A449 /* KooberUserSessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberUserSessionRepository.swift; sourceTree = "<group>"; };
+		AF0985D02BF3C96300C8A449 /* UserSessionDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionDataStore.swift; sourceTree = "<group>"; };
+		AF2A76DD2A8133E900997669 /* kooberMy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kooberMy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2A76E02A8133E900997669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF2A76E22A8133E900997669 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF2A76E42A8133E900997669 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AF2A76E72A8133E900997669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF2A76E92A8133EA00997669 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF2A76EC2A8133EA00997669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF2A76EE2A8133EA00997669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFF732F92A813BE000ED72A6 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		AFF732FB2A813C4D00ED72A6 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		AFF732FE2A813C8100ED72A6 /* KooberAppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KooberAppDependencyContainer.swift; sourceTree = "<group>"; };
+		AFF733012A813D3200ED72A6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		AFF733042A81418E00ED72A6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AFF733072A8141EC00ED72A6 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		AFF733092A8142C800ED72A6 /* SignedInResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInResponder.swift; sourceTree = "<group>"; };
+		AFF7330B2A8142F400ED72A6 /* NotSignedInResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSignedInResponder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2A76DA2A8133E900997669 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF0985BE2BF1180300C8A449 /* Kingfisher in Frameworks */,
+				AF0985BB2BF117E700C8A449 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF0985B32BF1161B00C8A449 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985B42BF1163100C8A449 /* AuthRemoteAPI.swift */,
+				AF0985BF2BF1187A00C8A449 /* FakeAuthRemoteAPI.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		AF0985B62BF116A200C8A449 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985B72BF116B100C8A449 /* NewAccount.swift */,
+				AFF733072A8141EC00ED72A6 /* UserSession.swift */,
+				AF0985C12BF3B53200C8A449 /* UserProfile.swift */,
+				AF0985C32BF3B61100C8A449 /* RemoteUserSession.swift */,
+				AF0985C52BF3B6B400C8A449 /* FakeURL.swift */,
+				AF0985C72BF3B81E00C8A449 /* KooberKitError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF0985C92BF3C50400C8A449 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985CA2BF3C51B00C8A449 /* Repository */,
+				AF0985B62BF116A200C8A449 /* Model */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		AF0985CA2BF3C51B00C8A449 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985CF2BF3C94E00C8A449 /* UserSessionStore */,
+				AF0985CB2BF3C67700C8A449 /* UserSessionRepository.swift */,
+				AF0985CD2BF3C79000C8A449 /* KooberUserSessionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AF0985CF2BF3C94E00C8A449 /* UserSessionStore */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985D02BF3C96300C8A449 /* UserSessionDataStore.swift */,
+			);
+			path = UserSessionStore;
+			sourceTree = "<group>";
+		};
+		AF2A76D42A8133E900997669 = {
+			isa = PBXGroup;
+			children = (
+				AF2A76DF2A8133E900997669 /* kooberMy */,
+				AF2A76DE2A8133E900997669 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2A76DE2A8133E900997669 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2A76DD2A8133E900997669 /* kooberMy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2A76DF2A8133E900997669 /* kooberMy */ = {
+			isa = PBXGroup;
+			children = (
+				AF0985C92BF3C50400C8A449 /* DataLayer */,
+				AF0985B32BF1161B00C8A449 /* Authentication */,
+				AFF733032A81417E00ED72A6 /* UILayer */,
+				AFF733002A813D2400ED72A6 /* VM */,
+				AFF732FD2A813C7300ED72A6 /* DIS */,
+				AFF732F82A813BB600ED72A6 /* VCS */,
+				AF2A76E02A8133E900997669 /* AppDelegate.swift */,
+				AF2A76E22A8133E900997669 /* SceneDelegate.swift */,
+				AF2A76E62A8133E900997669 /* Main.storyboard */,
+				AF2A76E92A8133EA00997669 /* Assets.xcassets */,
+				AF2A76EB2A8133EA00997669 /* LaunchScreen.storyboard */,
+				AF2A76EE2A8133EA00997669 /* Info.plist */,
+			);
+			path = kooberMy;
+			sourceTree = "<group>";
+		};
+		AFF732F82A813BB600ED72A6 /* VCS */ = {
+			isa = PBXGroup;
+			children = (
+				AF2A76E42A8133E900997669 /* MainViewController.swift */,
+				AFF732F92A813BE000ED72A6 /* NiblessViewController.swift */,
+				AFF732FB2A813C4D00ED72A6 /* LaunchViewController.swift */,
+			);
+			path = VCS;
+			sourceTree = "<group>";
+		};
+		AFF732FD2A813C7300ED72A6 /* DIS */ = {
+			isa = PBXGroup;
+			children = (
+				AFF732FE2A813C8100ED72A6 /* KooberAppDependencyContainer.swift */,
+			);
+			path = DIS;
+			sourceTree = "<group>";
+		};
+		AFF733002A813D2400ED72A6 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				AFF733012A813D3200ED72A6 /* MainViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		AFF733032A81417E00ED72A6 /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				AFF733042A81418E00ED72A6 /* MainView.swift */,
+				AFF733092A8142C800ED72A6 /* SignedInResponder.swift */,
+				AFF7330B2A8142F400ED72A6 /* NotSignedInResponder.swift */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2A76DC2A8133E900997669 /* kooberMy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2A76F12A8133EA00997669 /* Build configuration list for PBXNativeTarget "kooberMy" */;
+			buildPhases = (
+				AF2A76D92A8133E900997669 /* Sources */,
+				AF2A76DA2A8133E900997669 /* Frameworks */,
+				AF2A76DB2A8133E900997669 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kooberMy;
+			packageProductDependencies = (
+				AF0985BA2BF117E700C8A449 /* PromiseKit */,
+				AF0985BD2BF1180300C8A449 /* Kingfisher */,
+			);
+			productName = kooberMy;
+			productReference = AF2A76DD2A8133E900997669 /* kooberMy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2A76D52A8133E900997669 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AF2A76DC2A8133E900997669 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AF2A76D82A8133E900997669 /* Build configuration list for PBXProject "kooberMy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF2A76D42A8133E900997669;
+			packageReferences = (
+				AF0985B92BF117E700C8A449 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				AF0985BC2BF1180300C8A449 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = AF2A76DE2A8133E900997669 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2A76DC2A8133E900997669 /* kooberMy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2A76DB2A8133E900997669 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2A76ED2A8133EA00997669 /* LaunchScreen.storyboard in Resources */,
+				AF2A76EA2A8133EA00997669 /* Assets.xcassets in Resources */,
+				AF2A76E82A8133E900997669 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2A76D92A8133E900997669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFF733022A813D3200ED72A6 /* MainViewModel.swift in Sources */,
+				AF0985C42BF3B61100C8A449 /* RemoteUserSession.swift in Sources */,
+				AF0985B82BF116B100C8A449 /* NewAccount.swift in Sources */,
+				AF0985CE2BF3C79000C8A449 /* KooberUserSessionRepository.swift in Sources */,
+				AF0985C82BF3B81E00C8A449 /* KooberKitError.swift in Sources */,
+				AF0985C22BF3B53200C8A449 /* UserProfile.swift in Sources */,
+				AFF7330A2A8142C800ED72A6 /* SignedInResponder.swift in Sources */,
+				AF0985B52BF1163100C8A449 /* AuthRemoteAPI.swift in Sources */,
+				AFF733052A81418E00ED72A6 /* MainView.swift in Sources */,
+				AF0985C02BF1187A00C8A449 /* FakeAuthRemoteAPI.swift in Sources */,
+				AFF732FF2A813C8100ED72A6 /* KooberAppDependencyContainer.swift in Sources */,
+				AF2A76E52A8133E900997669 /* MainViewController.swift in Sources */,
+				AFF7330C2A8142F400ED72A6 /* NotSignedInResponder.swift in Sources */,
+				AF0985D12BF3C96300C8A449 /* UserSessionDataStore.swift in Sources */,
+				AFF732FC2A813C4D00ED72A6 /* LaunchViewController.swift in Sources */,
+				AFF732FA2A813BE000ED72A6 /* NiblessViewController.swift in Sources */,
+				AFF733082A8141EC00ED72A6 /* UserSession.swift in Sources */,
+				AF2A76E12A8133E900997669 /* AppDelegate.swift in Sources */,
+				AF0985C62BF3B6B400C8A449 /* FakeURL.swift in Sources */,
+				AF2A76E32A8133E900997669 /* SceneDelegate.swift in Sources */,
+				AF0985CC2BF3C67700C8A449 /* UserSessionRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF2A76E62A8133E900997669 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2A76E72A8133E900997669 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF2A76EB2A8133EA00997669 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2A76EC2A8133EA00997669 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF2A76EF2A8133EA00997669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF2A76F02A8133EA00997669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF2A76F22A8133EA00997669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5JHM44QL5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kooberMy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deep.kooberMy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF2A76F32A8133EA00997669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G5JHM44QL5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = kooberMy/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.deep.kooberMy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2A76D82A8133E900997669 /* Build configuration list for PBXProject "kooberMy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2A76EF2A8133EA00997669 /* Debug */,
+				AF2A76F02A8133EA00997669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2A76F12A8133EA00997669 /* Build configuration list for PBXNativeTarget "kooberMy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2A76F22A8133EA00997669 /* Debug */,
+				AF2A76F32A8133EA00997669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF0985B92BF117E700C8A449 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+		AF0985BC2BF1180300C8A449 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF0985BA2BF117E700C8A449 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF0985B92BF117E700C8A449 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		AF0985BD2BF1180300C8A449 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF0985BC2BF1180300C8A449 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AF2A76D52A8133E900997669 /* Project object */;
+}
